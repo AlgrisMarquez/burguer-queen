@@ -29,7 +29,7 @@ const menu = useMenu()
 //////const [order, setOrder] = useState([]);
 /* Para manejar click de cada opción */
 // const [opciones, setOpciones] = useState([]);
-const [order, setOrder] = useState([]);
+const [order, setOrder] = useState([initialOrder]);
 const handleClick = (e) => {
    // console.log(e.target.name);
    // console.log(e.target.value);
