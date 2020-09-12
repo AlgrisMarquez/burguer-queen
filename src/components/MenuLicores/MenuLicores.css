@@ -1,10 +1,11 @@
-.contenedorDeAlmuerzo{
+.contenedorDeLicores{
     position: absolute;
-    width: 173px;
-    height: 203px;
-    left: 320px;
-    top: 52px;
+    width: 175px;
+    height: 198px;
+    left: 507px;
+    top: 417px;
     background: #C4C4C4;
+  
 }
 
 table {
@@ -14,26 +15,11 @@ table {
     /*border-spacing: 21px; */
 }
 
-.TituloCarta {
-    position: absolute;
-    width: 144px;
-    height: 20px;
-    left: 228px;
-    top: -31px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-    color: #022939;
-}
-
-.btnMenuTitulo{
+.btnMenuTituloDos{
     width: 164px;
     height: 50px;
-    top: 15px;
-    background: #022939;
+    top: 419px;
+    background: #8C44AE;
     border-radius: 10px;
     /* Gray 1 */
     border: 1px solid #333333;
@@ -50,12 +36,12 @@ table {
     color: #FFFFFF;
 }
 
-.btnDetalleMenu{
+.btnDetalleMenuDos{
     width: 164px;
     height: 30px;
-    left: 138px,323px;
-    top: 162px;
-    background: #D6EDFE;
+    left: 138px;
+    top: 488px;
+    background: #E3D0D7;
   /* Gray 1 */
     border: 1px solid #333333;
     box-sizing: border-box;
@@ -65,5 +51,5 @@ table {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-     color: #000000;
- }
+    color: #000000;
+}

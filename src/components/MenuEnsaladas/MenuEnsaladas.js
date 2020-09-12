@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from "react";
-import './MenuAlmuerzo.css'
+import './MenuEnsaladas.css'
 
-function useAlmuerzo() {
-  const [almuerzo, setAlmuerzo] = useState([])
+function useEnsaladas() {
+  const [ensaladas, setEnsaladas] = useState([])
 
   useEffect(() => {
-    fetch("json/almuerzo.json")
+    fetch("json/ensaladas.json")
       .then(response => response.json())
       .then(datos => {
-        setAlmuerzo(datos)
+        setEnsaladas(datos)
       })
   }, [])
 
-  return almuerzo
+  return ensaladas
 }
 
-export default function DatosDos() {
-  const almuerzo = useAlmuerzo()
+export default function Datostres() {
+  const ensaladas = useEnsaladas()
   return (
-    <div className="contenedorDeAlmuerzo">
+    <div className="contenedorDeEnsaladas">
       <table>
         <tr>
-          <th><button id="" type="button" className="btnMenuTitulo">ALMUERZOS</button></th>
+          <th><button id="" type="button" className="btnMenuTitulo">ENSALADAS</button></th>
         </tr>
         <tbody>
-          {almuerzo.map(item => (
+          {ensaladas.map(item => (
             <tr key={item.type}>
               <td><button id="" type="button" className="btnDetalleMenu">{item.name}:${item.price}</button></td>
             </tr>
