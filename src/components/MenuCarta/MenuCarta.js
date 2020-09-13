@@ -40,10 +40,10 @@ export default function Datos() {
       console.log(orderName);
       console.log(orderPrice);
       initialOrder.push({ "name": orderName, "value": orderPrice });
-      setOrder(initialOrder+1);
+      setOrder(initialOrder + 1);
       console.log(order);
       console.log(initialOrder);
-     
+
 
    };
 
@@ -69,9 +69,6 @@ export default function Datos() {
                      ///</td>//}
                      >{item.name}:${item.price}</button></td>
 
-
-
-                     
                   </tr>
 
                ))}
@@ -85,11 +82,11 @@ export default function Datos() {
                return <div key={type}>
                   <p>{item.name}</p>
                   <p>{item.value}</p>
-                  </div>
-                })}
+               </div>
+            })}
          </div>
-                   
+
       </div>
-   </div>
-);
+   </div >
+   );
 }
