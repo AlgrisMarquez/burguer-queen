@@ -12,15 +12,9 @@ class MenuLateral extends React.Component{
             {/*<h1> esto es la vista del menu lateral</h1>*/}
                 <div className="lateralmenu">
                     <img src={camarero} className="img-izq" alt="camarero"/> 
-<<<<<<< HEAD
-                <button id="pedido" type="button" className="button1">HACER PEDIDO</button>
-                <button id="mipedido" type="button" className="button2">MIS PEDIDO</button>
-                 </div>
-=======
                     <NavLink to="/viewCocina" id="pedido" type="button" className="button1">HACER PEDIDO</NavLink>
                     <NavLink to="/viewEstatusPedidos"   id="mipedido" type="button" className="button2">MIS PEDIDO</NavLink>
                 </div>
->>>>>>> 23a9d3456773b2fe19918c502b023976c00449ed
             </React.Fragment>
         );
    }

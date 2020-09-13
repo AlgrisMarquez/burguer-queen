@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import './MenuPostres.css'
 
+//estado del listado de los postres
 function usePostres() {
     const [postres, setPostres] = useState([])
     useEffect(() => {
@@ -10,8 +11,10 @@ function usePostres() {
                 setPostres(datos)
             })
     }, [])
-    return postres
+  return postres
 }
+// estado de la orden de pedido mesero
+//const [Pedidopostres, setPedidopostres] = useState ([])
 
 export default function Datoscuatro() {
     const postres = usePostres()
@@ -22,11 +25,21 @@ export default function Datoscuatro() {
                     <th><button id="" type="button" className="btnMenuTituloDos">POSTRES</button></th>
                 </tr>
                 <tbody>
+                    <Fragment>
                     {postres.map(item => (
                         <tr key={item.type}>
                             <td><button id="" type="button" className="btnDetalleMenuDos">{item.name}:${item.price}</button></td>
-                        </tr>
-                    ))}
+                        </tr>),
+                        console.log (postres),
+                        console.log (Pedidopostres),
+                        //console.log (setpedidopostres),
+                         //postres={postres},
+                         //Pedidopostres={pedidopostre}
+                         //setPedidopostre={setPedidopostres}
+                    )}
+                   
+                    </Fragment>
+                    
                 </tbody>
             </table>
         </div>
