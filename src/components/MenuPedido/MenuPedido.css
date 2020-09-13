@@ -4,12 +4,6 @@
     height: 702px;
     left: 705px;
     top: 32px;
-<<<<<<< HEAD
-    background-color: #C4C4C4;
-}
-
-.TituloPedido{
-=======
 
     /*background: #FFFFFF;*/
     border-radius: 10px;
@@ -19,7 +13,6 @@
 
 .TituloPedido{
     
->>>>>>> 23a9d3456773b2fe19918c502b023976c00449ed
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;

@@ -17,7 +17,6 @@ function usePostres() {
 //exporto esta fucnion, pero no va a ninguan parte???
 export default function Datoscuatro() {
     const postres = usePostres()
-<<<<<<< HEAD
     /* Para manejar click de cada opción */
     const [orderPostres, setOrderPostres] = useState([]);
     const handleClick = (e) => {
@@ -36,10 +35,6 @@ export default function Datoscuatro() {
     //export default function Datoscuatro() {
     //  const postres = usePostres()
 
-=======
- const arrayPostres =postres.filter(pos => pos.Type === "Postres")
-  //console.log ( arrayEnsaladas);
->>>>>>> 19ded452b7cb104fa2058a6ec0ca04333b4062ed
     return (
         <div className="contenedorDePostres">
             <table>
