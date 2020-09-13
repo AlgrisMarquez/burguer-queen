@@ -31,7 +31,6 @@ export default function Datoscuatro() {
                             <td><button id="" type="button" className="btnDetalleMenuDos">{item.name}:${item.price}</button></td>
                         </tr>),
                         console.log (postres),
-                        console.log (Pedidopostres),
                         //console.log (setpedidopostres),
                          //postres={postres},
                          //Pedidopostres={pedidopostre}
