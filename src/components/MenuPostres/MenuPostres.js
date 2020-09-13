@@ -42,7 +42,7 @@ export default function Datoscuatro() {
                     <th><button id="" type="button" className="btnMenuTituloDos">POSTRES</button></th>
                 </tr>
                 <tbody>
-                    {arrayPostres.map(item => (
+                    {postres.map(item => (
                         <tr key={item.type}>
                             <td><button id="" type="button" className="btnDetalleMenuDos"
                             onClick={handleClick} name={item.name} value={item.price}>{item.name}:${item.price}</button>

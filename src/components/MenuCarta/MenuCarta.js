@@ -19,56 +19,6 @@ function useMenu() {
    return menu
 }
 
-<<<<<<< HEAD
-//exporto esta fucnion, pero no va a ninguan parte???
-export default function Datos() {
-const menu = useMenu()
-//////////////////////////////////////////////
-/* Constante que se va a crear para manejar la orden  */
-//const [menu, setMenu] = useState([]);
-///////////////////////////////////////////
-//////const [order, setOrder] = useState([]);
-/* Para manejar click de cada opción */
-// const [opciones, setOpciones] = useState([]);
-const [order, setOrder] = useState([initialOrder]);
-const handleClick = (e) => {
-   // console.log(e.target.name);
-   // console.log(e.target.value);
-   const orderName = e.target.name;
-   const orderPrice = e.target.value;
-   console.log(orderName);
-   console.log(orderPrice);
-   initialOrder.push({ "name": orderName, "value": orderPrice });
-   setOrder(initialOrder);
-   console.log(order);
-};
-
-return (
-   <div className="contenedorDeMenu">
-      <h1 className="TituloCarta"> Carta </h1>
-      <table>
-         <tr>
-            <th><button id="" type="button" className="btnMenuTitulo">PICOTEO</button></th>
-         </tr>
-         <tbody>
-            {menu.map(item => (
-               <tr key={item.type}>
-                  <td><button id={item.id} className="btnDetalleMenu"
-                     onClick={handleClick} name={item.name} value={item.price}>{item.name}:${item.price}</button>
-                  </td>
-               </tr>
-            ))}
-         </tbody>
-      </table>
-
-      <div className="pedidoBox">
-         {initialOrder.map((item, type) => {
-            return <div key={type}>
-               <p>{item.name}</p>
-               <p>{item.value}</p>
-            </div>
-         })}
-=======
 
 
 //exporto esta fucnion, pero no va a ninguan parte???
@@ -139,7 +89,6 @@ export default function Datos() {
                 })}
          </div>
                    
->>>>>>> 23a9d3456773b2fe19918c502b023976c00449ed
       </div>
    </div>
 );
