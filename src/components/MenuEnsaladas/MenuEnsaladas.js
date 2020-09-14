@@ -3,6 +3,7 @@ import Ensaladas from './Ensaladas'
 
 import Cart from '../Cart'
 import './MenuEnsaladas.css'
+import '../MenuPostres/MenuPostres.css'
 
 //estado de las ensaladas//
 function useEnsaladas() {
@@ -23,46 +24,49 @@ export default function Datostres() {
   const ensaladas = useEnsaladas()
   //console.log (ensaladas)
 
-  const arrayEnsaladas =ensaladas.filter(ensa => ensa.Type === "Ensaladas")
-  console.log ( arrayEnsaladas);
+  const arrayEnsaladas = ensaladas.filter(ensa => ensa.Type === "Ensaladas")
+  console.log(arrayEnsaladas);
 
   const postres = useEnsaladas()
-  const arrayPostres =postres.filter(pos => pos.Type === "Postres")
-  console.log (arrayPostres)
+  const arrayPostres = postres.filter(pos => pos.Type === "Postres")
+  console.log(arrayPostres)
 
   //estado del carrito, esta vacio porque aun usurio no ha elegido nada//
-  const [cart, setCart]= useState([])
+  const [cart, setCart] = useState([])
   return (
     <Fragment>
-    <div className="contenedorDeEnsaladas">
-     
-        
-          <button id="" type="button" className="btnMenuTitulo">ENSALADAS</button>
-        
-        
-          
-          {ensaladas.map((ensaladita) =>  (
-            <Ensaladas
+
+      <div className="contenedorDeEnsaladas">
+        <button id="" type="button" className="btnMenuTitulo">ENSALADAS</button>
+        {ensaladas.map((ensaladita) => (
+          <Ensaladas
             key={ensaladita.id}
             ensaladita={ensaladita}
             cart={cart}
             setCart={setCart}
             ensaladas={ensaladas}
-            />
-          ))}
+          />
+        ))}
 
-         
-        
-          <Cart 
-          cart={cart} 
+        <div className="contenedorDePostres">
+        <button id="" type="button" className="btnMenuTitulo">POSTRES</button>
+        {ensaladas.map((ensaladita) => (
+          <Ensaladas
+            key={ensaladita.id}
+            ensaladita={ensaladita}
+            cart={cart}
+            setCart={setCart}
+            ensaladas={ensaladas}
+          />
+        ))}
+        </div>
+
+        <Cart
+          cart={cart}
           setCart={setCart}
-           />
+        />
 
-         
-
-        
-      
-    </div>
+      </div>
     </Fragment>
   )
 };
