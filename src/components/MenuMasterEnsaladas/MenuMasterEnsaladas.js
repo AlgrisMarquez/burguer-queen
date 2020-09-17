@@ -6,8 +6,12 @@ import Almuerzo from '../MenuAlmuerzo/Almuerzo'
 import Bebidas from '../MenuBebidas/Bebidas'
 import Picoteo from '../MenuCarta/Picoteo'
 import Cart from '../Cart'
+<<<<<<< HEAD:src/components/MenuEnsaladas/MenuEnsaladas.js
 import './MenuEnsaladas.css'
 import '../MenuPostres/MenuPostres.css'
+=======
+import './MenuMasterEnsaladas.css'
+>>>>>>> 017204057b909a95cbfba22ab493b19d811ed628:src/components/MenuMasterEnsaladas/MenuMasterEnsaladas.js
 
 //estado de las ensaladas//
 function useEnsaladas() {
@@ -29,27 +33,27 @@ export default function Datostres() {
   //console.log (ensaladas)
 
   const arrayEnsaladas = ensaladas.filter(ensa => ensa.Type === "Ensaladas")
-  console.log(arrayEnsaladas);
+  //console.log(arrayEnsaladas);
 
   const postres = useEnsaladas()
   const arrayPostres = postres.filter(pos => pos.Type === "Postres")
-  console.log(arrayPostres)
+  //console.log(arrayPostres)
 
   const licores = useEnsaladas()
   const arrayLicores = licores.filter(lico => lico.Type === "Licores")
-  console.log(arrayLicores);
+  //console.log(arrayLicores);
 
   const almuerzo = useEnsaladas()
   const arrayAlmuerzo = almuerzo.filter(almu => almu.Type === "Almuerzos")
-  console.log(arrayAlmuerzo);
+ // console.log(arrayAlmuerzo);
 
   const bebidas = useEnsaladas()
   const arrayBebidas = bebidas.filter(bebi => bebi.Type === "Bebidas")
-  console.log(arrayBebidas);
+  //console.log(arrayBebidas);
 
   const picoteo = useEnsaladas()
   const arrayPicoteo = picoteo.filter(picot => picot.Type === "Picoteo")
-  console.log(arrayPicoteo);
+  //console.log(arrayPicoteo);
 
 
   //estado del carrito, esta vacio porque aun usurio no ha elegido nada//
