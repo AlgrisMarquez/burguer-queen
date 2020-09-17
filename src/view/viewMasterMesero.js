@@ -7,6 +7,7 @@ import MenuEnsaladas from '../components/MenuEnsaladas/MenuEnsaladas'
 import MenuPostres from '../components/MenuPostres/MenuPostres'
 import MenuLicores from '../components/MenuLicores/MenuLicores'
 import MenuBebidas from '../components/MenuBebidas/MenuBebidas'
+import Cart from '../components/Cart'
 
 function PedidosMesero() {
     return(
@@ -19,6 +20,7 @@ function PedidosMesero() {
         <MenuLateral/>
         <MenuPedido/>
         <MenuPostres/>
+        <Cart/>
     </div> 
     )
 }

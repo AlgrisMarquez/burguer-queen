@@ -34,17 +34,6 @@ export default function Datostres() {
   const postres = useEnsaladas()
   const arrayPostres = postres.filter(pos => pos.Type === "Postres")
   console.log(arrayPostres)
-<<<<<<< HEAD
-
-  //estado del carrito, esta vacio porque aun usurio no ha elegido nada//
-  const [cart, setCart] = useState([])
-  return (
-    <Fragment>
-
-      <div className="contenedorDeEnsaladas">
-        <button id="" type="button" className="btnMenuTitulo">ENSALADAS</button>
-        {ensaladas.map((ensaladita) => (
-=======
 
   const licores = useEnsaladas()
   const arrayLicores = licores.filter(lico => lico.Type === "Licores")
@@ -77,7 +66,6 @@ export default function Datostres() {
         <div className="contenedorTotal">
         <button id="" type="button" className="btnMenuTitulo">ENSALADAS</button>
         {arrayEnsaladas.map((ensaladita) => (
->>>>>>> be9621acdc0d9eacfc51c0f8a77fc746cc95af32
           <Ensaladas
             key={ensaladita.id}
             ensaladita={ensaladita}
@@ -86,30 +74,6 @@ export default function Datostres() {
             pedido={pedido}
             setPedido={setPedido}
             ensaladas={ensaladas}
-<<<<<<< HEAD
-          />
-        ))}
-
-        <div className="contenedorDePostres">
-        <button id="" type="button" className="btnMenuTitulo">POSTRES</button>
-        {ensaladas.map((ensaladita) => (
-          <Ensaladas
-            key={ensaladita.id}
-            ensaladita={ensaladita}
-            cart={cart}
-            setCart={setCart}
-            ensaladas={ensaladas}
-          />
-        ))}
-        </div>
-
-        <Cart
-          cart={cart}
-          setCart={setCart}
-        />
-
-      </div>
-=======
             /*contador={contador}
         setContador={setContador}*/
           />
@@ -187,7 +151,6 @@ export default function Datostres() {
         />
     </div>
  
->>>>>>> be9621acdc0d9eacfc51c0f8a77fc746cc95af32
     </Fragment>
   )
 };
