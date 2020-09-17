@@ -1,11 +1,16 @@
-.contenedorDePostres{
+/*.contenedorDePostres{
     position: absolute;
-    width: 167px;
+    width: 175px;
     height: 198px;
+<<<<<<< HEAD
     left: 136px;
     top: 430px;
+=======
+    left: 316px;
+    top: 417px;
+>>>>>>> be9621acdc0d9eacfc51c0f8a77fc746cc95af32
     background: #C4C4C4;
-}
+}*/
 table {
     display: table;
     border-collapse: separate;

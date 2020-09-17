@@ -1,12 +1,18 @@
+<<<<<<< HEAD
 import React, { useEffect, useState, } from "react";
+=======
+import React, { Fragment, useEffect, useState } from "react";
+>>>>>>> be9621acdc0d9eacfc51c0f8a77fc746cc95af32
 import './MenuPostres.css'
+import Postres from './Postres'
+import Cart from '../Cart'
 
 const initialPostresOrder = []
 
 function usePostres() {
     const [postres, setPostres] = useState([])
     useEffect(() => {
-        fetch("json/dataTotal.json")
+        fetch("json/postres.json")
             .then(response => response.json())
             .then(datos => {
                 setPostres(datos)
@@ -17,6 +23,7 @@ function usePostres() {
 //exporto esta fucnion, pero no va a ninguan parte???
 export default function Datoscuatro() {
     const postres = usePostres()
+<<<<<<< HEAD
     /* Para manejar click de cada opción */
     const [orderPostres, setOrderPostres] = useState([]);
     const handleClick = (e) => {
@@ -34,9 +41,17 @@ export default function Datoscuatro() {
 
     //export default function Datoscuatro() {
     //  const postres = usePostres()
+=======
+
+    const [cart, setCart]= useState([])
+    const arrayPostres =postres.filter(postre=> postre.Type === "Postres")
+      console.log ( arrayPostres);
+>>>>>>> be9621acdc0d9eacfc51c0f8a77fc746cc95af32
 
     return (
+        <Fragment>
         <div className="contenedorDePostres">
+<<<<<<< HEAD
             <table>
                 <tr>
                     <th><button id="" type="button" className="btnMenuTituloDos">POSTRES</button></th>
@@ -64,3 +79,22 @@ export default function Datoscuatro() {
    );
 }
 
+=======
+       {/* <button id="" type="button" className="btnMenuTituloDos">POSTRES</button>*/}
+            
+        {arrayPostres.map((postrecillo) =>  (
+            <Postres
+            key={postrecillo.id}
+            postrecillo={postrecillo}
+            cart={cart}
+            setCart={setCart}
+            postres={postres}
+            />
+          ))}
+        </div>
+            </Fragment>
+
+
+    )
+};
+>>>>>>> be9621acdc0d9eacfc51c0f8a77fc746cc95af32

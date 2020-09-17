@@ -1,10 +1,17 @@
-.contenedorDeBebidas{
+
+.contenedorBebidas{
     position: absolute;
     width: 175px;
     height: 198px;
+<<<<<<< HEAD
     left: 316px;
     top: 430px;
     background: #C4C4C4;
+=======
+    left: -189px;
+    top: 417px;
+    /*background: #C4C4C4;*/
+>>>>>>> be9621acdc0d9eacfc51c0f8a77fc746cc95af32
 }
 
 table {
@@ -48,3 +55,4 @@ table {
     line-height: 16px;
     color: #000000;
 }
+
