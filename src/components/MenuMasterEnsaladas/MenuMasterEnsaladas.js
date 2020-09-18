@@ -6,12 +6,7 @@ import Almuerzo from '../MenuAlmuerzo/Almuerzo'
 import Bebidas from '../MenuBebidas/Bebidas'
 import Picoteo from '../MenuCarta/Picoteo'
 import Cart from '../Cart'
-<<<<<<< HEAD:src/components/MenuEnsaladas/MenuEnsaladas.js
-import './MenuEnsaladas.css'
-import '../MenuPostres/MenuPostres.css'
-=======
 import './MenuMasterEnsaladas.css'
->>>>>>> 017204057b909a95cbfba22ab493b19d811ed628:src/components/MenuMasterEnsaladas/MenuMasterEnsaladas.js
 
 //estado de las ensaladas//
 function useEnsaladas() {
